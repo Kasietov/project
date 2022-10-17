@@ -1,0 +1,366 @@
+@media(max-width: 769px){
+
+.services{
+  padding: 40px 0 40px;
+  &__title{
+    font-size: 26px;
+  }
+  &__description{
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  &__box{
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__button{
+    margin: 25px auto 0;
+  }
+}
+.about{
+  padding: 40px 0 40px;
+  &__box{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    &-title{
+     text-align: center;
+      font-size: 26px;
+    }
+    &-description{
+      text-align: center;
+      font-size: 14px;
+    }
+    &-link{
+      text-align: center;
+    }
+    &-textBox{
+     padding-bottom: 20px;
+    }
+  }
+}
+.all-services{
+  padding: 40px 0 40px;
+  &__box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    &-title{
+      text-align: center;
+    }
+    &-button{
+      margin-top: 20px;
+
+    }
+  }
+  &__flexBox{
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__background{
+    height: 27%;
+  }
+
+}
+  .all-project{
+    padding: 40px 0 40px;
+    &__box{
+
+      &-title{
+        margin-top: -50px;
+        font-size: 26px;
+      }
+      &-description{
+        width: 100%;
+        font-size: 16px;
+
+      }
+    }
+    &__row{
+row-gap: 30px;
+    }
+  }
+ .video{
+   padding: 40px 0 40px;
+   &__title{
+     font-size: 26px;
+   }
+   &__description{
+     font-size: 14px;
+     margin-top: 0;
+   }
+   &__box{
+     margin: 30px 0 auto;
+   }
+   &__background{
+     width: 100%;
+   }
+ }
+ .header{
+   &__menu{
+     display: none;
+     &.active{
+       display: flex;
+       flex-direction: column;
+       width: 60%;
+       height: 100vh;
+       position: fixed;
+       top: 0;
+       right: 0;
+       align-items: center;
+       background: #00000090;
+       z-index: 5;
+     }
+   }
+   &__item{
+     &:hover{
+       border-bottom: 2px solid transparent;
+     }
+   }
+   .burger-menu{
+     width: 30px;
+     height: 3px;
+     background: #FFFFFF;
+     position: fixed;
+     top: 50px;
+     right: 50px;
+     z-index: 10;
+    &:before{
+       content: '';
+       position: absolute;
+       width:100% ;
+       height: 100%;
+       background: #FFFFFF;
+       top: -10px;
+       right: 0;
+      transition: 0.5s;
+     }
+     &:after{
+       content: '';
+       position: absolute;
+       width:100% ;
+       height: 100%;
+       background: #FFFFFF;
+       top: 10px;
+       right: 0;
+       transition: 0.5s;
+     }
+     &.active{
+       background:transparent;
+       &:before{
+         transform: rotate(45deg) translate(13px, 0px);
+
+       }
+       &:after{
+         transform: rotate(-45deg) translate(15px, 0);
+       }
+     }
+   }
+ }
+
+ .home{
+   padding: 80px 0 40px;
+   height: 100vh;
+   &__subtitle{
+     font-size: 30px;
+   }
+ }
+}
+@media (max-width: 425px){
+.home{
+  &__title{
+    font-size: 13px;
+  }
+  &__subtitle{
+    font-size: 20px;
+  }
+  &__button{
+    width: 150px;
+    font-size: 15px;
+  }
+}
+  .services{
+    &__title{
+      font-size: 18px;
+    }
+    &__description{
+      font-size: 12px;
+    }
+    &__button{
+      width: 150px;
+      height: 30px;
+      font-size: 12px;
+
+    }
+  }
+  .about{
+  padding: 20px 0 20px;
+  &__box{
+    &-title{
+      margin-top: 15px;
+      font-size: 16px;
+    }
+    &-image{
+      width: 400px;
+    }
+  }
+  &__flexBox{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  .all-services{
+    &__box{
+      &-title{
+        font-size: 18px;
+      }
+      &-button{
+        width: 150px;
+        height: 35px;
+        background: #4985FF;
+        box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+        border-radius: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+    &__flexBox{
+      &-title{
+        font-size: 18px;
+      }
+      &-description{
+        font-size: 12px;
+      }
+      &-link{
+        margin-left: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .all-project{
+    margin-top: 0;
+    &__box{
+     &-title{
+       font-size: 18px;
+     }
+      &-description{
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+    &__button{
+      @include button
+    }
+  }
+  .video{
+    &__box{
+      &-player{
+        width: 150px;
+        height: 20px;
+
+      }
+      &-icon{
+         width: 30px;
+         height: 30px;
+        margin-top: -30px;
+        margin-left: -35px;
+       }
+      &-text{
+        position: absolute;
+        font-size: 10px;
+        margin-top: -16px;
+      }
+    }
+    &__background{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .subscribe{
+
+    &__title{
+      font-size: 16px;
+    }
+    &__box {
+      width: 415px;
+      height: 30px;
+
+      &-button {
+        font-size: 12px;
+      }
+    }
+  }
+  .footer{
+    margin-top: 10px;
+    padding: 0 0 30px;
+
+    &__title {
+      font-size: 12px;
+
+    }
+    &__text{
+      font-size: 10px;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .video{
+    &__box{
+
+    }
+  }
+.subscribe{
+  &__box{
+    width: 350px;
+    &-button{
+
+
+    }
+  }
+}
+}
+@media (max-width: 325px) {
+  .about{
+    width: 320px;
+    &__box{
+      &-description{
+        font-size: 11px;
+
+      }
+      &-link{
+        font-size: 11px;
+      }
+    }
+  }
+  .all-services{
+
+    &__flexBox{
+
+      &-description{
+        font-size: 9px;
+        text-align: center;
+      }
+    }
+  }
+  .subscribe{
+
+    &__box{
+      width: 310px;
+    }
+  }
+
+}

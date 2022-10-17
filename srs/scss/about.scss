@@ -1,0 +1,70 @@
+.about {
+  padding: 152px 0 70px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+
+    &-textBox {
+      width: 490px;
+      padding-bottom: 90px;
+    }
+    &-title{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 53px;
+      color: #323232;
+      margin-top: 70px;
+    }
+    &-description{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #999999;
+      margin-top: 40px;
+    }
+    &-link{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      color: #4985ff;
+      margin-top: 60px;
+      display: block;
+      text-decoration: underline;
+    }
+  }
+  &__flexBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    &-item{
+
+    }
+    &-box{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-title{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 53px;
+      color: #000000;
+      margin-left: 10px;
+    }
+    &-image{
+      object-fit: contain;
+    }
+    &-text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #999999;
+    }
+  }
+}
